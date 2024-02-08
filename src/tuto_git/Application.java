@@ -20,6 +20,12 @@ public class Application extends Frame {
 		this.add(vue);
 		this.pack();
 		this.setVisible(true);
+		this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); 
 	}
+	
+	@Override
+	   public void windowClosed(WindowEvent e) {
+	      System.exit(0);
+	   }
 
 }
